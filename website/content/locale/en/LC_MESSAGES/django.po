@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-06 17:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: content/apps.py:8
+msgid "content"
+msgstr ""
+
+#: content/models.py:14
+msgid "Creation date"
+msgstr ""
+
+#: content/models.py:15
+msgid "Date of last contact"
+msgstr ""
+
+#: content/models.py:23
+msgid "Internet Search"
+msgstr ""
+
+#: content/models.py:24
+msgid "Social Media"
+msgstr ""
+
+#: content/models.py:25
+msgid "Blogs"
+msgstr ""
+
+#: content/models.py:26
+msgid "Private Reccomendation"
+msgstr ""
+
+#: content/models.py:27
+msgid "Podcasts"
+msgstr ""
+
+#: content/models.py:31
+msgid "Not_processed"
+msgstr ""
+
+#: content/models.py:32
+msgid "In_progress"
+msgstr ""
+
+#: content/models.py:33
+msgid "Processed"
+msgstr ""
+
+#: content/models.py:34
+msgid "Closed"
+msgstr ""
+
+#: content/models.py:38
+msgid "IT Infrastructure Optimization"
+msgstr ""
+
+#: content/models.py:39
+msgid "Information Security"
+msgstr ""
+
+#: content/models.py:40
+msgid "Project Management"
+msgstr ""
+
+#: content/models.py:41
+msgid "Web Application Development"
+msgstr ""
+
+#: content/models.py:42
+msgid "Business Process Automation"
+msgstr ""
+
+#: content/models.py:43
+msgid "Marketing"
+msgstr ""
+
+#: content/models.py:44
+msgid "Finance Analysis"
+msgstr ""
+
+#: content/models.py:45
+msgid "Data Analysis"
+msgstr ""
+
+#: content/models.py:46
+msgid "AI Implementation"
+msgstr ""
+
+#: content/models.py:47
+msgid "Efficiency Improvement"
+msgstr ""
+
+#: content/models.py:48
+msgid "Post-Project Support"
+msgstr ""
+
+#: content/models.py:49
+msgid "Business Consulting"
+msgstr ""
+
+#: content/models.py:50
+msgid "Mobile App Development"
+msgstr ""
+
+#: content/models.py:51
+msgid "CRM Implementation"
+msgstr ""
+
+#: content/models.py:52
+msgid "API Implementation"
+msgstr ""
+
+#: content/models.py:57
+msgid "Name"
+msgstr ""
+
+#: content/models.py:58
+msgid "Surname"
+msgstr ""
+
+#: content/models.py:59
+msgid "Email"
+msgstr ""
+
+#: content/models.py:60
+msgid "Phone Number"
+msgstr ""
+
+#: content/models.py:64
+msgid "Company"
+msgstr ""
+
+#: content/models.py:65
+msgid "Position"
+msgstr ""
+
+#: content/models.py:66
+msgid "Company's adress"
+msgstr ""
+
+#: content/models.py:70
+msgid "Lead Status"
+msgstr ""
+
+#: content/models.py:71 content/models.py:78
+msgid "Lead Source"
+msgstr ""
+
+#: content/models.py:72
+msgid "Exact Source"
+msgstr ""
+
+#: content/models.py:73
+msgid "Form filling page"
+msgstr ""
+
+#: content/models.py:74
+msgid "Total site visit time"
+msgstr ""
+
+#: content/models.py:79
+msgid "Full problem"
+msgstr ""
+
+#: content/models.py:82
+msgid "Person"
+msgstr ""
+
+#: content/models.py:83
+msgid "Persons"
+msgstr ""

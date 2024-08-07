@@ -1,0 +1,27 @@
+version: '3.8' 
+  
+services:
+  django:
+    build:
+      context: .
+    volumes:
+      - "./website:/website"
+    env_file:
+      - "ArtemSheptalin/.env"
+    depends_on:
+      - mongo
+  
+  mongo:
+    image: mongo:6.0.3
+    container_name: mongodb
+    volumes:
+      - /opt/homebrew/var/mongodb:/data/db/
+    ports:
+      - "27017:27017"
+    restart: always
+    environment:
+      - MONGODB_NAME=admin_database
+      - MONGODB_USER=manager
+      - MONGODB_PASSWORD=123qwe
+
+
