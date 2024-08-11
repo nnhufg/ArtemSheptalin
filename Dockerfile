@@ -32,5 +32,5 @@ COPY website .
 RUN python3 manage.py collectstatic --no-input
 
 # запускаем через uwsgi
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
-# CMD [ "uwsgi", "--ini", "/movies_admin/uwsgi.ini" ]
+# CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD [ "uwsgi", "--ini", "/website/uwsgi.ini" ]

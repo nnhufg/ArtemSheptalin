@@ -14,7 +14,7 @@ SECRET_KEY = "django-insecure-o&a^56c-2it9#!zm34)cc(h8zi3a6z38gcj4fke9-_a^l4nr)_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 INSTALLED_APPS = [
@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Locale path for translation
 
 LOCALE_PATH = ['content/locale']
+
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8080']
