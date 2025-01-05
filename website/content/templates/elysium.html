@@ -1,1 +1,1088 @@
-<h1>ELYSIUM</h1>
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Программа Elysium{%endblock %} 
+{% block content %}
+<main class="page">
+  <div data-observ></div>
+  <div class="about about-two">
+    <div class="about__container">
+      <div class="block-back about__content">
+        <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+          Вы можете стать очень богатыми, причём очень быстро - присоединяйтесь
+          к тем,
+        </h1>
+        <p
+          class="about__sub-title"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          кто уже открыл новые возможности бизнеса
+        </p>
+        <div class="about__row">
+          <div
+            class="about__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            Бесплатная консультация
+          </div>
+          <div
+            class="about__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="600"
+          >
+            Не поможем - вернём деньги
+          </div>
+          <div
+            class="about__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
+            Три вида гарантии
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section guarant">
+    <div class="guarant__container">
+      <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+        Что такое программа Elysium?
+      </h2>
+      <div
+        class="block-back guarant__content"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <div class="guarant__row">
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row reverse">
+              <div class="item-guarant__img">
+                <picture>
+                  <source
+                    srcset="images/item-guarant-img1.webp" type="image/webp" />
+                  <img src="images/item-guarant-img1.png" alt=""/>
+                </picture>
+              </div>
+              <div class="item-guarant__body">
+                Elysium — это экосистема и инновационная программа, которая
+                позволяет вашему бизнесу расти и развиваться самостоятельно, без
+                вашего постоянного участия.
+              </div>
+            </div>
+          </div>
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row">
+              <div class="item-guarant__body">
+                Программа нацелена на автоматизацию сложных ИТ процессов вашей
+                компании, поэтому пока мы работаем, вы можете уделять время
+                другим проектам: играть в гольф, путешествовать на Карибах с
+                семьей или заниматься какой-то еще деятельностью, требующей
+                вашего внимания.
+              </div>
+              <div class="item-guarant__img">
+                <picture
+                  ><source
+                    srcset="images/item-guarant-img2.webp"
+                    type="image/webp" />
+                  <img src="images/item-guarant-img2.png" alt=""
+                /></picture>
+              </div>
+            </div>
+          </div>
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row reverse">
+              <div class="item-guarant__img">
+                <picture
+                  ><source
+                    srcset="images/item-guarant-img3.webp"
+                    type="image/webp" />
+                  <img src="images/item-guarant-img3.png" alt=""
+                /></picture>
+              </div>
+              <div class="item-guarant__body">
+                В Elysium — над каждым проектом работает целая команда
+                специалистов, поэтому ручной труд и постоянный контроль
+                совершенно не требуется.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section why-prog"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="why-prog__container">
+      <div class="block-back why-prog__content">
+        <div class="why-prog__row">
+          <div class="why-prog__img">
+            <picture
+              ><source srcset="images/why-prog-img.webp" type="image/webp" />
+              <img src="images/why-prog-img.png" alt=""
+            /></picture>
+          </div>
+          <div class="why-prog__body">
+            <h2 data-da=".why-prog__content, 820, first">Почему Elysium?</h2>
+            <p class="why-prog__sub-title">
+              Используя программу Elysium вы получаете целый список преимуществ:
+            </p>
+            <ul class="why-prog__list">
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>Вы сможете масштабировать свой бизнес, без особых усилий;</p>
+              </li>
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>
+                  Вы сможете избежать давления и страха незнания как правильно
+                  реализовать ваш проект;
+                </p>
+              </li>
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>
+                  Работа идет вне зависимости от вашего настроения и состояния
+                  здоровья;
+                </p>
+              </li>
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>
+                  Вы сможете всегда создавать продукт с максимальной степенью
+                  конверсии и совершенствоваться день ото дня;
+                </p>
+              </li>
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>
+                  Никакой технической неразберихи, вы сами фактически не
+                  занимаетесь разработкой продукта;
+                </p>
+              </li>
+              <li class="why-prog__li">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#EB4247" />
+                </svg>
+                <p>
+                  Четкая система работы и налаженный процесс разработки, что
+                  позволяет добиваться максимальной степени эффективности  за
+                  короткий промежуток времени;
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section custom custom-two"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="custom__container">
+      <div class="custom__content">
+        <div class="reverse custom__row">
+          <div class="custom__body">
+            <h2>Сделайте следующий шаг</h2>
+            <p>
+              Запишитесь на бесплатную консультацию и расскажите о вашей
+              проблеме, и если вы на 100% не будете удовлетворены нашим
+              подробным разбором и рекомендациями, то мы компенсируем вам за
+              потраченное время
+            </p>
+            <div
+              class="button two custom__button"
+              data-da=".custom__content, 820, last"
+              data-type="popup-form"
+            >
+              Сделать шаг
+            </div>
+          </div>
+          <div class="custom__img">
+            <picture>
+              <source srcset="{% static "images/next-step.png"%}" type="image/webp" />
+              <img src="{% static "images/next-step.png"%}" alt=""/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section worth">
+    <div class="worth__container">
+      <div class="block-back worth__content">
+        <h2 class="center">
+          С Elysium вам не придется беспокоиться
+          <br />о вашем бизнесе. Мы будем:
+        </h2>
+        <div class="worth__row">
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="0"
+          >
+            <div class="worth__number">1</div>
+            <p>Создавать новые продукты и продвигать их на рынке</p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <div class="worth__number">2</div>
+            <p>Собирать требования к проекту и вести документацию</p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="worth__number">3</div>
+            <p>Составлять план работ и бюджет проекта</p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <div class="worth__number">4</div>
+            <p>Управлять разработкой сайтов, сервисов и мобильных приложений</p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <div class="worth__number">5</div>
+            <p>
+              Организовывать работу команды программистов, дизайнеров,
+              тестировщиков
+            </p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="500"
+          >
+            <div class="worth__number">6</div>
+            <p>Вести переговоры и строить отношения с заказчиками</p>
+          </div>
+        </div>
+        <div class="worth__button-row">
+          <div class="button two worth__button" data-type="popup-form">
+            Узнайте подробнее
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section elysium"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="elysium__container">
+      <div class="elysium__row">
+        <div class="elysium__img">
+          <picture
+            ><source srcset="{% static "images/elysium-img.webp"%}" type="image/webp" />
+            <img src="{% static "images/elysium-img.png"%}" alt=""
+          /></picture>
+        </div>
+        <div class="elysium__body">
+          <div class="elysium__text">
+            <p>
+              С Elysium вы будете вызывать зависть у своих коллег, наблюдающих
+              как в очередь к вам выстраиваются качественные потенциальные
+              клиенты.
+            </p>
+            <p>
+              Избавившись от напряжения, связанного с незнанием, вы сможете
+              вновь насладиться процессом ведения своего бизнеса.
+            </p>
+            <p>
+              Вы никогда не останетесь "один на один" со своей проблемой, именно
+              это вложено в смысл программы Elysium.
+            </p>
+          </div>
+          <div class="button two elysium__button" data-type="popup-form">
+            Запишитесь на консультацию
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section advant">
+    <div class="advant__container">
+      <h2
+        class="center"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        Преимущества программы Elysium
+      </h2>
+      <div class="advant__row">
+        <div
+          class="block-back advant__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="0"
+        >
+          <h3>Экономия времени</h3>
+          <p>
+            всего 2 часа вашего времени, чтобы составить подробный план и
+            согласовать этапы.
+          </p>
+        </div>
+        <div
+          class="block-back advant__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <h3>Ускоренный выход на рынок</h3>
+          <p>
+            в среднем требуется 2-3 месяца, чтобы получить первую стабильную
+            версию проекта. 
+          </p>
+        </div>
+        <div
+          class="block-back advant__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
+          <h3>Фокус на главном</h3>
+          <p>
+            Вы сможете работать где захотите, когда захотите  и сколько захотите
+            - всю рутинную работу мы берем на себя.
+          </p>
+        </div>
+        <div
+          class="block-back advant__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="600"
+        >
+          <h3>Постоянная поддержка</h3>
+          <p>
+            2 часа среднее время полного устранения ошибок в случае атак или
+            сбоев.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section how">
+    <div class="how__container">
+      <h2
+        class="center m-w"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        Чем вы рискуете, работая
+        <br />самостоятельно?
+      </h2>
+      <div class="how__row">
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="150"
+            >
+              Высокая текучка
+            </h3>
+          </div>
+          <div class="how__right">
+            На данный момент ИТ очень подвижная сфера — люди приходят, уходят и
+            возвращаются - это нарушает налаженные рабочие процессы и влияет на
+            уровень эффективности компании.
+          </div>
+        </div>
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              Нервами
+            </h3>
+          </div>
+          <div class="how__right">
+            Сейчас очень сложно нанимать людей, и помимо рынка, бизнесу часто
+            приходится конкурировать еще и за квалифицированных специалистов.
+          </div>
+        </div>
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="450"
+            >
+              Отсутствие опыта
+            </h3>
+          </div>
+          <div class="how__right">
+            Мы сталкивались с ситуациями, когда компании не имеют полного
+            понимания того, что именно требуется, и часто имеют только общие
+            представления о конечном продукте.
+          </div>
+        </div>
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="600"
+            >
+              Сжатые сроки
+            </h3>
+          </div>
+          <div class="how__right">
+            Мы понимаем, что бизнес сталкивается с недостатком времени, и в
+            таких условиях компании часто вынуждены идти на определённые
+            компромиссы.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section frames"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="200"
+  >
+    <div class="frames__container">
+      <h2 class="center">В рамках программы вас также ждут:</h2>
+      <div class="frames__row">
+        <div class="frames__body">
+          <div class="frames__item-row">
+            <div class="frames__item">
+              <div class="worth__number">1</div>
+              <p>Диагностика и выявление проблемных зон вашего бизнеса.</p>
+            </div>
+            <div class="frames__item">
+              <div class="worth__number">2</div>
+              <p>
+                Мастер-классы от действующих специалистов и экспертов в разных
+                областях (маркетинг, разработка, управление и так далее),
+                которые всегда проконсультируют, ответят на любые вопросы, а
+                также помогут с решением проблем и предоставят четкий,
+                структурированный план.
+              </p>
+            </div>
+            <div class="frames__item">
+              <div class="worth__number">3</div>
+              <p>Нетворкинг-встречи с участниками программы.</p>
+            </div>
+          </div>
+        </div>
+        <div class="frames__img">
+          <picture
+            ><source srcset="{% static "images/frames-img.webp"%}" type="image/webp" />
+            <img src="{% static "images/frames-img.png"%}" alt=""
+          /></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section quest"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="quest__container">
+      <h2 class="center">Часто задаваемые вопросы</h2>
+      <div class="quest__row">
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">01.</div>
+            <h3>Если мне не понравится, я смогу вернуть деньги?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">02.</div>
+            <h3>Какие преимущества я получу в программе Elysium?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">03.</div>
+            <h3>
+              Чем программа Elysium отличается от стандартных подходов к
+              аутсорсингу?
+            </h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">04.</div>
+            <h3>
+              Как я могу быть уверен в том, что программа будет мне выгодна?
+            </h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">05.</div>
+            <h3>
+              Есть ли бесплатный период, чтобы я мог попробовать и убедиться в
+              эффективности программы?
+            </h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">06.</div>
+            <h3>Какие есть форматы членства в Elysium?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">07.</div>
+            <h3>Каким требованиям должен соответствовать мой бизнес?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">08.</div>
+            <h3>
+              Чем буду заниматься я, а что будете делать вы в рамках программы?
+            </h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">09.</div>
+            <h3>В чем преимущества преимуществ программы?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+        <div class="item-quest quest__item">
+          <div class="item-quest__head">
+            <div class="item-quest__number">10.</div>
+            <h3>Есть ли еще дополнительные бонусы в программе Elysium?</h3>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.8638 0.838078L21.642 8.18381C22.1193 8.63458 22.1193 9.36542 21.642 9.81619L13.8638 17.1619C13.3865 17.6127 12.6127 17.6127 12.1354 17.1619C11.6581 16.7112 11.6581 15.9803 12.1354 15.5295L17.8271 10.1543L1.22222 10.1543C0.547207 10.1543 0 9.63749 0 9C0 8.36251 0.547207 7.84573 1.22222 7.84573L17.8271 7.84573L12.1354 2.47046C11.6581 2.01969 11.6581 1.28885 12.1354 0.838078C12.6127 0.387307 13.3865 0.387307 13.8638 0.838078Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+          <div class="item-quest__body">
+            Мы уверены, что вам необходим продукт, способный справиться с вашей
+            задачей. Мы гарантируем, что решим вашу проблему и если не сможем
+            вам помочь, то работа полностью за наш счет. Расскажите о своей
+            проблеме и получите уникальное предложение сегодня.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section answer"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="200"
+  >
+    <div class="answer__container">
+      <div class="block-back answer__content">
+        <h2 class="center answer__title">Остались вопросы?</h2>
+        <p class="answer__sub-title">
+          Запишитесь на бесплатную консультацию и получите свой первый подарок
+          от нашей команды.
+        </p>
+        <form action="#" class="answer__form">
+          <div class="answer__item-row">
+            <div class="answer__item-input">
+              <input
+                type="text"
+                name="name"
+                placeholder="Артём Шепталин"
+                class="_req answer__input"
+              />
+              <div class="answer__item-input-error">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                    fill="#FF0008"
+                  />
+                </svg>
+                <span> Обязательное поле </span>
+              </div>
+              <div class="answer__item-input-error-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                  <rect
+                    x="7"
+                    y="13.5"
+                    width="14"
+                    height="2"
+                    rx="1"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="answer__item-input-ok-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__item-input">
+              <input
+                type="text"
+                name="email"
+                placeholder="info@sheptalin.com"
+                class="_req answer__input _email"
+              />
+              <div class="answer__item-input-error">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                    fill="#FF0008"
+                  />
+                </svg>
+                <span> Неверный формат почты </span>
+              </div>
+              <div class="answer__item-input-error-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                  <rect
+                    x="7"
+                    y="13.5"
+                    width="14"
+                    height="2"
+                    rx="1"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="answer__item-input-ok-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__item-input">
+              <input
+                type="text"
+                name="tel"
+                placeholder="+7 (999) 999-99-99"
+                class="_req answer__input tel"
+              />
+              <div class="answer__item-input-error">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                    fill="#FF0008"
+                  />
+                </svg>
+                <span> Обязательное поле </span>
+              </div>
+              <div class="answer__item-input-error-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                  <rect
+                    x="7"
+                    y="13.5"
+                    width="14"
+                    height="2"
+                    rx="1"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="answer__item-input-ok-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <label class="answer__item-input-checkbox item-input-checkbox">
+              <input
+                checked="checked"
+                type="checkbox"
+                name="personal"
+                class="_req item-input-checkbox__input"
+              />
+              <div class="item-input-checkbox__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="1" fill="#EB4247" />
+                  <path
+                    d="M7 13.1538L11.3488 17L18 7"
+                    stroke="white"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <p class="item-input-checkbox__text">
+                Согласие на обработку <a href="#">персональных данных</a>
+              </p>
+            </label>
+            <button class="button two answer__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="cookies">
+    <div class="cookies__container">
+      <div class="block-back cookies__body">
+        <div class="cookies__title">Мы используем cookies</div>
+        <div class="cookies__text">
+          Продолжая использовать наш сайт, вы соглашаетесь с политикой
+          использования Cookies. Это файлы в браузере, которые помогают нам
+          сделать ваш опыт взаимодействия с сайтом удобнее.
+        </div>
+        <div class="cookies__bottom">
+          <div class="button two cookies__button cookies__button-close">
+            Согласен со всеми
+          </div>
+          <a href="" class="button two cookies__button transp"> Настроить </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

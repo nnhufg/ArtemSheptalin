@@ -19,6 +19,10 @@ class SolutionsPage(TemplateView):
     template_name = 'solutions.html'
 
 
+class ErrorPage(TemplateView):
+    template_name = 'error-page.html'
+
+
 # def add_document(request):
 #     record = {
 #         'id': '2873273827hd7dhbhxhs',

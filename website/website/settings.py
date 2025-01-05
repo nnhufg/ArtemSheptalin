@@ -14,7 +14,7 @@ SECRET_KEY = "django-insecure-o&a^56c-2it9#!zm34)cc(h8zi3a6z38gcj4fke9-_a^l4nr)_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'da5c-176-59-170-94.ngrok-free.app']
 
 
 INSTALLED_APPS = [
@@ -119,9 +119,10 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = '/Users/nnhufg/Desktop/ArtemSheptalin/website/staticfiles'
 
 # Media files
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
@@ -133,4 +134,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOCALE_PATH = ['content/locale']
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8080']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8080', 'https://1c90-176-59-168-17.ngrok-free.app']

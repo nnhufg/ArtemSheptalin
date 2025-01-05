@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}" />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="{% url 'index' %}" class="header__logo logo">
+              <img src={% static "images/logo.svg"%} alt="" />
+            </a>
+            <nav class="header__menu menu">
+              <div class="menu__content">
+                <div class="menu__head">
+                  <a href="{% url 'index' %}" class="header__logo logo">
+                    <img src={% static "images/logo.svg"%} alt="" />
+                  </a>
+                  <div class="icon-menu menu__close">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="16.5957"
+                        width="30"
+                        height="3.19149"
+                        rx="1.59574"
+                        transform="rotate(90 16.5957 0)"
+                        fill="#262626"
+                      />
+                      <rect
+                        y="13.4043"
+                        width="30"
+                        height="3.19149"
+                        rx="1.59574"
+                        fill="#262626"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="{% url 'services' %}" class="menu__link"
+                      >Направления деятельности
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="{% url 'solutions' %}" class="menu__link">Кейсы</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="{% url 'elysium' %}" class="menu__link"
+                      >Программа Elysium</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <button class="icon-menu header__burger">
+              <svg
+                width="47"
+                height="32"
+                viewBox="0 0 47 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="5" rx="2" fill="#262626" />
+                <rect y="9" width="47" height="5" rx="2" fill="#262626" />
+                <rect y="18" width="38" height="5" rx="2" fill="#262626" />
+                <rect y="27" width="47" height="5" rx="2" fill="#262626" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      {% block content %}{% endblock %}
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="block-back footer__content">
+            <div class="footer__row">
+              <div class="footer__item item-foot">
+                <div class="item-foot__title">Контакты</div>
+                <div class="item-foot__row">
+                  <a href="tel:79999999999" class="item-foot__link">
+                    +7 (999) 999-99-99
+                  </a>
+                  <a href="mailto:info@sheptalin.com" class="item-foot__link">
+                    info@sheptalin.com
+                  </a>
+                </div>
+              </div>
+              <div class="footer__item item-foot">
+                <div class="item-foot__title">Адрес</div>
+                <div class="item-foot__row">
+                  <p class="item-foot__link">
+                    г. Москва, Пресненская набережная, д. 12
+                  </p>
+                </div>
+              </div>
+              <div class="footer__item item-foot item-foot-social">
+                <div class="item-foot__social">
+                  <a href="#">
+                    <img src="images/footer-social1.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="images/footer-social2.svg" alt="" />
+                  </a>
+                </div>
+                <div class="item-foot__row">
+                  <a target="_blank" href="#" class="item-foot__link">
+                    Политика конфиденциальности
+                  </a>
+                  <a target="_blank" href="#" class="item-foot__link">
+                    @2024 Artem Sheptalin Inc.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup" data-popup="popup-form" data-close-overlay>
+      <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+          <button class="button-close popup__close" type="button">
+            <svg
+              width="47"
+              height="47"
+              viewBox="0 0 47 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="26"
+                width="47"
+                height="5"
+                rx="2"
+                transform="rotate(90 26 0)"
+                fill="#262626"
+              />
+              <rect y="21" width="47" height="5" rx="2" fill="#262626" />
+            </svg>
+          </button>
+          <div class="popup__row">
+            <div class="popup__img">
+              <picture
+                ><source srcset="images/why-img.webp" type="image/webp" />
+                <img src="images/why-img.jpg" alt=""
+              /></picture>
+            </div>
+            <div class="popup__body">
+              <h2>Нет времени изучать информацию на сайте?</h2>
+              <p class="popup__text">
+                Заполните форму, а мы перезвоним через 10 минут и всё расскажем
+              </p>
+              <form action="#" class="answer__form">
+                <div class="answer__item-row">
+                  <div class="answer__item-input">
+                    <input
+                      type="text"
+                      name="tel"
+                      placeholder="+7 (999) 999-99-99"
+                      class="_req answer__input tel"
+                    />
+                    <div class="answer__item-input-error">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                          fill="#FF0008"
+                        />
+                      </svg>
+                      <span> Обязательное поле </span>
+                    </div>
+                    <div class="answer__item-input-error-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                        <rect
+                          x="7"
+                          y="13.5"
+                          width="14"
+                          height="2"
+                          rx="1"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="answer__item-input-ok-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <label
+                    class="answer__item-input-checkbox item-input-checkbox"
+                  >
+                    <input
+                      checked="checked"
+                      type="checkbox"
+                      name="personal"
+                      class="_req item-input-checkbox__input"
+                    />
+                    <div class="item-input-checkbox__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="24" height="24" rx="1" fill="#EB4247" />
+                        <path
+                          d="M7 13.1538L11.3488 17L18 7"
+                          stroke="white"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="item-input-checkbox__text">
+                      Согласие на обработку <a href="#">персональных данных</a>
+                    </p>
+                  </label>
+                  <button class="button two answer__button">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="popup popup-tranks"
+      data-popup="popup-thanks"
+      data-close-overlay
+    >
+      <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content popup-tranks__content">
+          <button class="button-close popup__close" type="button">
+            <svg
+              width="47"
+              height="47"
+              viewBox="0 0 47 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="26"
+                width="47"
+                height="5"
+                rx="2"
+                transform="rotate(90 26 0)"
+                fill="#262626"
+              />
+              <rect y="21" width="47" height="5" rx="2" fill="#262626" />
+            </svg>
+          </button>
+          <div class="popup-tranks__body">
+            <h2>Спасибо за интерес к нашим услугам и сообществу Elysium!</h2>
+            <div class="popup-tranks__text">
+              <p>
+                Мы получили вашу заявку и в скором времени ваш персональный
+                менеджер свяжется с вами, чтобы назначить удобное время для
+                онлайн-консультации!
+              </p>
+
+              <p>
+                В качестве знака признательности мы рады предложить вам скачать
+                наш специальный подарок.
+              </p>
+            </div>
+            <a href="#" class="button two popup-tranks__button">
+              Вы можете получить его здесь
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'js/main.min.js' %}"></script>
+  </body>
+</html>

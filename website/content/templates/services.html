@@ -1,1 +1,885 @@
-<h1>НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ</h1>
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Направления деятельности{% endblock %} 
+{% block content %}
+<main class="page">
+  <div data-observ></div>
+  <div class="about">
+    <div class="about__fon">
+      <picture>
+        <source srcset="images/about-fon.webp" type="image/webp" />
+        <img src="images/about-fon.jpg" alt=""/>
+      </picture>
+    </div>
+    <div class="about__container">
+      <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+        Вы получите время и свободу,
+      </h1>
+      <p
+        class="about__sub-title"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        вместо тяжелой работы
+      </p>
+      <div
+        class="m-t about__button-row"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="400"
+      >
+        <div class="button about__button" data-type="popup-form">
+          Присоединяйтесь к программе Elysium
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section program"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="program__container">
+      <div class="block-back program__content">
+        <h2 class="center">С программой Elysium</h2>
+        <div class="program__row">
+          <div class="program__item">
+            <div class="program__img">
+              <img src="images/program-item1.svg" alt="" />
+            </div>
+            <p>
+              Вы сможете потратить 100% вашего времени и ресурсов на развитие
+              бизнеса.
+            </p>
+          </div>
+          <div class="program__item">
+            <div class="program__img">
+              <img src="images/program-item2.svg" alt="" />
+            </div>
+            <p>
+              И если продукт не решит вашу проблему - то мы выкупим его обратно.
+            </p>
+          </div>
+        </div>
+        <div class="program__button-row">
+          <div class="link-button program__button-link" data-type="popup-form">
+            Запишитесь на бесплатную консультацию
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.04228 0.99248L15.7365 0.686695C16.3927 0.667929 16.9095 1.18471 16.8908 1.84096L16.585 12.5352C16.5662 13.1914 16.019 13.7386 15.3628 13.7574C14.7065 13.7762 14.1897 13.2594 14.2085 12.6031L14.4322 4.7776L2.69084 16.519C2.21353 16.9963 1.46118 17.0178 1.01041 16.567C0.559637 16.1163 0.581149 15.3639 1.05846 14.8866L12.7999 3.14521L4.97432 3.36897C4.31807 3.38774 3.80129 2.87095 3.82005 2.2147C3.83882 1.55845 4.38603 1.01124 5.04228 0.99248Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section why"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="why__container">
+      <div class="block-back why__row">
+        <div class="why__img">
+          <picture>
+            <source srcset="{% static 'images/services_about.png' %}" type="image/webp" />
+            <img src="{% static 'images/services_about.png' %}" alt=""/>
+          </picture>
+        </div>
+        <div class="why__body">
+          <h2>О нас</h2>
+          <div class="why__row-item">
+            <div class="block-back f-2 why__item">
+              Создаём веб-приложения, интернет-магазины, высоконагруженные
+              сервисы и корпоративные порталы.
+            </div>
+            <div class="block-back f-2 why__item">
+              Разрабатываем мобильные приложения для IOS и Android.
+            </div>
+            <div class="block-back f-2 why__item">
+              Занимаемся аналитикой и помогаем руководителям компаний принимать
+              решения на основе данных.
+            </div>
+            <div class="block-back f-2 why__item">
+              Создаём дизайн для сайтов и сервисов любой сложности.
+            </div>
+            <div class="block-back f-2 why__item">
+              А также полностью управляем разработкой проекта: составляем план
+              и бюджет проекта, общаемся с заказчиками, руководим командой
+              разработки, контролируем сроки и ведём всю документацию
+              по проекту.
+            </div>
+          </div>
+          <div
+            class="link-button m-t why__button-link"
+            data-da=".why__row, 1045, first"
+            data-type="popup-form"
+          >
+            Узнайте подробнее
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.04228 0.99248L15.7365 0.686695C16.3927 0.667929 16.9095 1.18471 16.8908 1.84096L16.585 12.5352C16.5662 13.1914 16.019 13.7386 15.3628 13.7574C14.7065 13.7762 14.1897 13.2594 14.2085 12.6031L14.4322 4.7776L2.69084 16.519C2.21353 16.9963 1.46118 17.0178 1.01041 16.567C0.559637 16.1163 0.581149 15.3639 1.05846 14.8866L12.7999 3.14521L4.97432 3.36897C4.31807 3.38774 3.80129 2.87095 3.82005 2.2147C3.83882 1.55845 4.38603 1.01124 5.04228 0.99248Z"
+                fill="#262626"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section opp">
+    <div class="opp__container">
+      <h2 class="center">Возможности</h2>
+      <div class="opp__row opp-row">
+        <div class="opp__wrapper swiper-wrapper">
+          <div class="block-back opp__item swiper-slide">Веб разработка</div>
+          <div class="block-back opp__item swiper-slide">
+            Мобильная разработка
+          </div>
+          <div class="block-back opp__item swiper-slide">
+            Бэкап и резервное копирование
+          </div>
+          <div class="block-back opp__item swiper-slide">Безопасность</div>
+          <div class="block-back opp__item swiper-slide">Автоматизация</div>
+        </div>
+      </div>
+      <div dir="rtl" class="opp__row opp-row-rewerse">
+        <div class="opp__wrapper swiper-wrapper">
+          <div class="block-back opp__item swiper-slide">
+            Управление и администрирование
+          </div>
+          <div class="block-back opp__item swiper-slide">
+            Создание инфраструктуры
+          </div>
+          <div class="block-back opp__item swiper-slide">
+            Создание инфраструктуры
+          </div>
+          <div class="block-back opp__item swiper-slide">
+            Маркетинг и аналитика
+          </div>
+        </div>
+      </div>
+      <div class="opp__row opp-row">
+        <div class="opp__wrapper swiper-wrapper">
+          <div class="block-back opp__item swiper-slide">
+            Финансы и управление рисками
+          </div>
+          <div class="block-back opp__item swiper-slide">
+            Оптимизация производительности
+          </div>
+          <div class="block-back opp__item swiper-slide">ETL-процессы</div>
+          <div class="block-back opp__item swiper-slide">Разработка API</div>
+          <div class="block-back opp__item swiper-slide">
+            Взаимодействие с внешними сервисами
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section worth">
+    <div class="worth__container">
+      <div class="block-back worth__content">
+        <h2 class="center">Когда стоит воспользоваться услугами?</h2>
+        <div class="worth__row">
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="0"
+          >
+            <div class="worth__number">1</div>
+            <p>
+              Вы уже начали работу и поняли, что создать качественный продукт
+              непросто.
+            </p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="worth__number">2</div>
+            <p>У вас нет опыта в ИТ и вы не знаете с чего начать работу.</p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <div class="worth__number">3</div>
+            <p>
+              Работаете над несколькими проектами и у вас нет времени на долгие
+              и изнурительные поиски команды, а также координацию их работы.
+            </p>
+          </div>
+          <div
+            class="worth__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="600"
+          >
+            <div class="worth__number">4</div>
+            <p>
+              Вы хотите снизить уровень ответственности, но при этом быть
+              уверенным в результате, получив три вида гарантии о нас.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section custom custom-two"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="custom__container">
+      <div class="custom__content">
+        <div class="custom__row">
+          <div class="custom__img">
+            <picture>
+              <source srcset="{% static "images/delegation.png"%}" type="image/webp" />
+              <img src="{% static "images/delegation.png"%}" alt=""/>
+            </picture>
+          </div>
+          <div class="custom__body">
+            <h2>
+              Всё просто: вы делегируете
+              <br />- мы выполняем.
+            </h2>
+            <p>
+              И берем ответственность на себя, пока вы занимаетесь другими
+              делами.
+            </p>
+            <div
+              class="button two custom__button"
+              data-da=".custom__content, 820, last"
+              data-type="popup-form"
+            >
+              Узнайте как это?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section helping">
+    <div class="helping__container">
+      <h2
+        class="center"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        Кому мы помогаем?
+      </h2>
+      <div class="helping__row three">
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="0"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Малому и среднему бизнесу</h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Интернет-магазинам</h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <div class="helping__item-fon"></div>
+          <h3> Школам, университетам, курсам</h3>
+        </div>
+      </div>
+      <div class="two helping__row">
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>
+            Финансовым консультантам, коучам, инвесторам, дизайнерам,
+            фотографам, адвокатам и людям абсолютно всех профессий.
+          </h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>
+            Финансовым консультантам, коучам, инвесторам, дизайнерам,
+            фотографам, адвокатам и людям абсолютно всех профессий.
+          </h3>
+        </div>
+      </div>
+      <div class="helping__row four">
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Клиникам, частным практикам</h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Туризму и гостиничному бизнесу</h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="500"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Стартапам</h3>
+        </div>
+        <div
+          class="helping__item"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="600"
+        >
+          <div class="helping__item-fon"></div>
+          <h3>Сообществам и форумам</h3>
+        </div>
+      </div>
+
+      <div
+        class="helping__button-row"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        <div class="button two helping__button" data-type="popup-form">
+          Больше информации
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section guarant"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="guarant__container">
+      <div class="block-back guarant__content">
+        <h2 class="center">Гарантии</h2>
+        <div class="guarant__row">
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row">
+              <div class="item-guarant__body">
+                Вместе создадим договор, который вам подходит. Берем
+                ответственность за качество услуг и выполнения обязательств. И
+                если мы не сможем помочь вашему бизнесу, то мы вернем вам всю
+                сумму - это прописано в договоре.
+              </div>
+              <div class="item-guarant__img">
+                <picture
+                  ><source srcset="images/why-img.webp" type="image/webp" />
+                  <img src="images/why-img.jpg" alt=""
+                /></picture>
+              </div>
+            </div>
+          </div>
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row reverse">
+              <div class="item-guarant__img">
+                <picture
+                  ><source srcset="images/why-img.webp" type="image/webp" />
+                  <img src="images/why-img.jpg" alt=""
+                /></picture>
+              </div>
+              <div class="item-guarant__body">
+                Любые ошибки или сбои, которые мы не заметим на этапе
+                тестирования или которые возникнут в течение двух месяцев после
+                запуска - устраняем за наш счет.
+              </div>
+            </div>
+          </div>
+          <div class="guarant__item item-guarant">
+            <div class="item-guarant__row">
+              <div class="item-guarant__body">
+                Сделаем перерыв в работе или перенесём дедлайн в случае
+                непредвиденных обстоятельств или возникновения форс-мажоров.
+              </div>
+              <div class="item-guarant__img">
+                <picture
+                  ><source srcset="images/why-img.webp" type="image/webp" />
+                  <img src="images/why-img.jpg" alt=""
+                /></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section how">
+    <div class="how__container">
+      <h2
+        class="center"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        Как это работает?
+      </h2>
+      <div class="how__row">
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              Нужен сайт или мобильное приложение?
+            </h3>
+          </div>
+          <div class="how__right">
+            - Обращение к нам
+            <br />- Бесплатная консультация, подробный технический разбор и
+            заключение договора
+          </div>
+        </div>
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              Занимаемся разработкой проекта
+            </h3>
+          </div>
+          <div class="how__right">
+            Создаем интерактивную версию будущего продукта, прорабатываем UX/UI,
+            программируем, тестируем и запускаем проект на сервере.
+          </div>
+        </div>
+        <div class="how__item">
+          <div class="how__left">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              Гарантийный период и пострелизная поддержка
+            </h3>
+          </div>
+          <div class="how__right">
+            Не бросаем и помогаем с обновлениями и развитием продукта в рамках
+            программы Elysium.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section still">
+    <div class="still__container">
+      <div class="block-back still__content">
+        <h2 class="center">А ещё вы</h2>
+        <div class="still__row">
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="0"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item1.svg"%} alt="" />
+            </div>
+            <h3>
+              Сфокусируетесь
+              <br />на любимом деле
+            </h3>
+          </div>
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item2.svg"%} alt="" />
+            </div>
+            <h3>
+              Будете зарабатывать больше,
+              <br />а работать меньше
+            </h3>
+          </div>
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item3.svg"%} alt="" />
+            </div>
+            <h3>
+              Получите 100%
+              <br />удовлетворенность новыми результатами
+            </h3>
+          </div>
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item4.svg"%} alt="" />
+            </div>
+            <h3>Повысите продажи и увеличите доходность</h3>
+          </div>
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item5.svg"%} alt="" />
+            </div>
+            <h3>
+              Получите стабильную
+              <br />и бесперебойную работу вашего бизнеса
+            </h3>
+          </div>
+          <div
+            class="still__item"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="500"
+          >
+            <div class="still__item-img">
+              <img src={% static "images/still-item6.svg"%} alt="" />
+            </div>
+            <h3>
+              Сможете легко адаптироваться
+              <br />к меняющимся условиям
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section consultation"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="0"
+  >
+    <div class="consultation__container">
+      <div class="block-back consultation__content">
+        <h2 class="center">Оставьте заявку на консультацию</h2>
+        <div class="consultation__row">
+          <div class="consultation__body">
+            <div class="consultation__top">
+              <div class="consultation__item-row">
+                <div class="consultation__item">
+                  Позвоним в течение 30 минут — всё расскажем и ответим на
+                  вопросы.
+                </div>
+                <div class="consultation__item">
+                  Поможем определить цели и составим договор, который вам
+                  подходит.
+                </div>
+                <div class="consultation__item">
+                  Сможем приступить к работе сразу после подписания договора.
+                </div>
+              </div>
+            </div>
+            <form action="#" class="answer__form">
+              <div class="answer__item-row">
+                <div class="answer__item-input-row">
+                  <div class="answer__item-input">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Артём Шепталин"
+                      class="_req answer__input"
+                    />
+                    <div class="answer__item-input-error">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                          fill="#FF0008"
+                        />
+                      </svg>
+                      <span> Обязательное поле </span>
+                    </div>
+                    <div class="answer__item-input-error-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                        <rect
+                          x="7"
+                          y="13.5"
+                          width="14"
+                          height="2"
+                          rx="1"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="answer__item-input-ok-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="answer__item-input">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="info@sheptalin.com"
+                      class="_req answer__input _email"
+                    />
+                    <div class="answer__item-input-error">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                          fill="#FF0008"
+                        />
+                      </svg>
+                      <span> Неверный формат почты </span>
+                    </div>
+                    <div class="answer__item-input-error-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                        <rect
+                          x="7"
+                          y="13.5"
+                          width="14"
+                          height="2"
+                          rx="1"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="answer__item-input-ok-icon">
+                      <svg
+                        width="28"
+                        height="29"
+                        viewBox="0 0 28 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer__item-input">
+                  <input
+                    type="text"
+                    name="tel"
+                    placeholder="+7 (999) 999-99-99"
+                    class="_req answer__input tel"
+                  />
+                  <div class="answer__item-input-error">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.99992 11.333C8.18881 11.333 8.34725 11.269 8.47525 11.141C8.60325 11.013 8.66703 10.8548 8.66659 10.6663C8.66614 10.4779 8.60214 10.3197 8.47459 10.1917C8.34703 10.0637 8.18881 9.99967 7.99992 9.99967C7.81103 9.99967 7.65281 10.0637 7.52525 10.1917C7.3977 10.3197 7.3337 10.4779 7.33325 10.6663C7.33281 10.8548 7.39681 11.0132 7.52525 11.1417C7.6537 11.2701 7.81192 11.3339 7.99992 11.333ZM7.99992 8.66634C8.18881 8.66634 8.34725 8.60234 8.47525 8.47434C8.60325 8.34634 8.66703 8.18812 8.66659 7.99967V5.33301C8.66659 5.14412 8.60259 4.9859 8.47459 4.85834C8.34659 4.73079 8.18836 4.66679 7.99992 4.66634C7.81147 4.6659 7.65325 4.7299 7.52525 4.85834C7.39725 4.98679 7.33325 5.14501 7.33325 5.33301V7.99967C7.33325 8.18856 7.39725 8.34701 7.52525 8.47501C7.65325 8.60301 7.81147 8.66679 7.99992 8.66634ZM7.99992 14.6663C7.0777 14.6663 6.21103 14.4912 5.39992 14.141C4.58881 13.7908 3.88325 13.3159 3.28325 12.7163C2.68325 12.1168 2.20836 11.4112 1.85859 10.5997C1.50881 9.78812 1.3337 8.92145 1.33325 7.99967C1.33281 7.0779 1.50792 6.21123 1.85859 5.39967C2.20925 4.58812 2.68414 3.88256 3.28325 3.28301C3.88236 2.68345 4.58792 2.20856 5.39992 1.85834C6.21192 1.50812 7.07859 1.33301 7.99992 1.33301C8.92125 1.33301 9.78792 1.50812 10.5999 1.85834C11.4119 2.20856 12.1175 2.68345 12.7166 3.28301C13.3157 3.88256 13.7908 4.58812 14.1419 5.39967C14.493 6.21123 14.6679 7.0779 14.6666 7.99967C14.6653 8.92145 14.4901 9.78812 14.1413 10.5997C13.7924 11.4112 13.3175 12.1168 12.7166 12.7163C12.1157 13.3159 11.4101 13.791 10.5999 14.1417C9.7897 14.4923 8.92303 14.6672 7.99992 14.6663ZM7.99992 13.333C9.48881 13.333 10.7499 12.8163 11.7833 11.783C12.8166 10.7497 13.3333 9.48856 13.3333 7.99967C13.3333 6.51079 12.8166 5.24967 11.7833 4.21634C10.7499 3.18301 9.48881 2.66634 7.99992 2.66634C6.51103 2.66634 5.24992 3.18301 4.21659 4.21634C3.18325 5.24967 2.66659 6.51079 2.66659 7.99967C2.66659 9.48856 3.18325 10.7497 4.21659 11.783C5.24992 12.8163 6.51103 13.333 7.99992 13.333Z"
+                        fill="#FF0008"
+                      />
+                    </svg>
+                    <span> Обязательное поле </span>
+                  </div>
+                  <div class="answer__item-input-error-icon">
+                    <svg
+                      width="28"
+                      height="29"
+                      viewBox="0 0 28 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14.5" r="14" fill="#FF0008" />
+                      <rect
+                        x="7"
+                        y="13.5"
+                        width="14"
+                        height="2"
+                        rx="1"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="answer__item-input-ok-icon">
+                    <svg
+                      width="28"
+                      height="29"
+                      viewBox="0 0 28 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14.5" r="14" fill="#26D07C" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.5954 17.1124L9.21722 13.7259C8.99293 13.5011 8.6287 13.5011 8.40441 13.7259C8.1809 13.95 8.1809 14.3127 8.40441 14.5367L12.19 18.3317C12.4139 18.5561 12.7769 18.5561 13.0008 18.3317L20.5956 10.7182C20.8191 10.4942 20.8191 10.1315 20.5956 9.9074C20.3713 9.68256 20.0071 9.68256 19.7828 9.9074L12.5954 17.1124Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <label class="answer__item-input-checkbox item-input-checkbox">
+                  <input
+                    checked="checked"
+                    type="checkbox"
+                    name="personal"
+                    class="_req item-input-checkbox__input"
+                  />
+                  <div class="item-input-checkbox__icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="24" height="24" rx="1" fill="#EB4247" />
+                      <path
+                        d="M7 13.1538L11.3488 17L18 7"
+                        stroke="white"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item-input-checkbox__text">
+                    Согласие на обработку <a href="#">персональных данных</a>
+                  </p>
+                </label>
+                <button class="button two answer__button">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="consultation__img"
+            data-da=".consultation__top, 1340, last"
+          >
+          <picture>
+            <source srcset="{% static "images/form.png"%}" type="image/webp" />
+            <img src="{% static "images/form.png"%}" alt=""/>
+          </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cookies">
+    <div class="cookies__container">
+      <div class="block-back cookies__body">
+        <div class="cookies__title">Мы используем cookies</div>
+        <div class="cookies__text">
+          Продолжая использовать наш сайт, вы соглашаетесь с политикой
+          использования Cookies. Это файлы в браузере, которые помогают нам
+          сделать ваш опыт взаимодействия с сайтом удобнее.
+        </div>
+        <div class="cookies__bottom">
+          <div class="button two cookies__button cookies__button-close">
+            Согласен со всеми
+          </div>
+          <a href="" class="button two cookies__button transp"> Настроить </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
