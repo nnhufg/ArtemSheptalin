@@ -47,16 +47,16 @@
         <div class="program__row">
           <div class="program__item">
             <div class="program__img">
-              <img src="images/program-item1.svg" alt="" />
+              <img src={% static "images/program-item1.svg"%} alt="" />
             </div>
             <p>
               Вы сможете потратить 100% вашего времени и ресурсов на развитие
-              бизнеса.
+              бизнеса - а всю рутинную работу мы берём на себя.
             </p>
           </div>
           <div class="program__item">
             <div class="program__img">
-              <img src="images/program-item2.svg" alt="" />
+              <img src={% static "images/program-item2.svg"%} alt="" />
             </div>
             <p>
               И если продукт не решит вашу проблему - то мы выкупим его обратно.
@@ -65,7 +65,7 @@
         </div>
         <div class="program__button-row">
           <div class="link-button program__button-link" data-type="popup-form">
-            Запишитесь на бесплатную консультацию
+            Оставьте адрес электронной почты и получите БЕСПЛАТНЫЙ подарок 
             <svg
               width="17"
               height="17"
@@ -128,7 +128,7 @@
             data-da=".why__row, 1045, first"
             data-type="popup-form"
           >
-            Узнайте подробнее
+            Узнайте, как мы гарантированно решим ВАШУ проблему
             <svg
               width="17"
               height="17"
@@ -268,11 +268,10 @@
           </div>
           <div class="custom__body">
             <h2>
-              Всё просто: вы делегируете
-              <br />- мы выполняем.
+              Всё просто: вы ставите цели, а мы их выполняем.
             </h2>
             <p>
-              И берем ответственность на себя, пока вы занимаетесь другими
+              И берем бремя работ на себя, пока вы занимаетесь другими
               делами.
             </p>
             <div
@@ -280,7 +279,7 @@
               data-da=".custom__content, 820, last"
               data-type="popup-form"
             >
-              Узнайте как это?
+              Узнайте, как это?
             </div>
           </div>
         </div>
@@ -298,12 +297,7 @@
         Кому мы помогаем?
       </h2>
       <div class="helping__row three">
-        <div
-          class="helping__item"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="0"
-        >
+        <div class="helping__item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
           <div class="helping__item-fon"></div>
           <h3>Малому и среднему бизнесу</h3>
         </div>
@@ -416,16 +410,15 @@
           <div class="guarant__item item-guarant">
             <div class="item-guarant__row">
               <div class="item-guarant__body">
-                Вместе создадим договор, который вам подходит. Берем
-                ответственность за качество услуг и выполнения обязательств. И
-                если мы не сможем помочь вашему бизнесу, то мы вернем вам всю
+                Официальный договор, который вам подходит. 
+                И если мы не сможем помочь вашему бизнесу, то вернем вам всю
                 сумму - это прописано в договоре.
               </div>
               <div class="item-guarant__img">
-                <picture
-                  ><source srcset="images/why-img.webp" type="image/webp" />
-                  <img src="images/why-img.jpg" alt=""
-                /></picture>
+                <picture>
+                  <source srcset="{% static "images/agreement.jpeg"%}" type="image/webp" />
+                  <img src="{% static "images/agreement.jpeg"%}" alt=""/>
+                </picture>
               </div>
             </div>
           </div>
@@ -433,13 +426,13 @@
             <div class="item-guarant__row reverse">
               <div class="item-guarant__img">
                 <picture
-                  ><source srcset="images/why-img.webp" type="image/webp" />
-                  <img src="images/why-img.jpg" alt=""
+                  ><source srcset="{% static "images/why-img.webp"%}" type="image/webp" />
+                  <img src={% static "images/why-img.jpg"%} alt=""
                 /></picture>
               </div>
               <div class="item-guarant__body">
                 Любые ошибки или сбои, которые мы не заметим на этапе
-                тестирования или которые возникнут в течение двух месяцев после
+                тестирования или которые возникнут в течение месяца после
                 запуска - устраняем за наш счет.
               </div>
             </div>
@@ -447,8 +440,7 @@
           <div class="guarant__item item-guarant">
             <div class="item-guarant__row">
               <div class="item-guarant__body">
-                Сделаем перерыв в работе или перенесём дедлайн в случае
-                непредвиденных обстоятельств или возникновения форс-мажоров.
+                Если у вас возникнут непредвиденные обстоятельства или форс-мажоры - сделаем перерыв в работе или перенесем дедлайн.
               </div>
               <div class="item-guarant__img">
                 <picture
@@ -480,7 +472,7 @@
               data-aos-duration="800"
               data-aos-delay="100"
             >
-              Нужен сайт или мобильное приложение?
+              Нужен сайт, сервис или мобильное приложение?
             </h3>
           </div>
           <div class="how__right">
@@ -620,22 +612,20 @@
   >
     <div class="consultation__container">
       <div class="block-back consultation__content">
-        <h2 class="center">Оставьте заявку на консультацию</h2>
+        <h2 class="center">Хотите узнать больше?</h2>
         <div class="consultation__row">
           <div class="consultation__body">
             <div class="consultation__top">
               <div class="consultation__item-row">
                 <div class="consultation__item">
-                  Позвоним в течение 30 минут — всё расскажем и ответим на
-                  вопросы.
+                  Подпишитесь на нашу электронную рассылку, чтобы получать последние обновления, новости и сообщения, в которых мы делимся лучшими бизнес-практиками и стратегиями, которые действительно работают.
                 </div>
                 <div class="consultation__item">
-                  Поможем определить цели и составим договор, который вам
-                  подходит.
+                  Введите свой основной адрес электронной почты, чтобы получить БЕСПЛАТНУЮ цифровую копию чек-листа «Оптимизация лендинговой страницы».
                 </div>
-                <div class="consultation__item">
-                  Сможем приступить к работе сразу после подписания договора.
-                </div>
+                {% comment %} <div class="consultation__item">
+                  Подробнее о членстве вы сможете узнать в нашей электронной рассылке.
+                </div> {% endcomment %}
               </div>
             </div>
             <form action="#" class="answer__form">
@@ -760,7 +750,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="answer__item-input">
+                {% comment %} <div class="answer__item-input">
                   <input
                     type="text"
                     name="tel"
@@ -818,7 +808,7 @@
                       />
                     </svg>
                   </div>
-                </div>
+                </div> {% endcomment %}
                 <label class="answer__item-input-checkbox item-input-checkbox">
                   <input
                     checked="checked"
@@ -846,7 +836,7 @@
                     Согласие на обработку <a href="#">персональных данных</a>
                   </p>
                 </label>
-                <button class="button two answer__button">Отправить</button>
+                <button class="button two answer__button">Получить БЕСПЛАТНЫЙ подарок</button>
               </div>
             </form>
           </div>

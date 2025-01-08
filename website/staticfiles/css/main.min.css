@@ -2737,7 +2737,12 @@ form.unlock button {
 }
 
 .there__body h2 {
-    margin-bottom: 6.5625rem
+    margin-bottom: 1.5625rem
+}
+
+.there__body p {
+    font-size: clamp(1rem, .7998932764rem + .8537886873vw, 1.5rem);
+    margin-bottom: 1.5625rem
 }
 
 .why__row {
